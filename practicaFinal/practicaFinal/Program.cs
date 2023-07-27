@@ -13,11 +13,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers().AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<GetEmpleadosBuisness>());
+builder.Services.AddControllers().AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<PostEmpleadoBuisness>());
 builder.Services.AddDbContext<ContextDB>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("ConexionDataBase"));
 });
 builder.Services.AddMediatR(typeof(GetEmpleadosBuisness.Manejador).Assembly);
+builder.Services.AddMediatR(typeof(PostEmpleadoBuisness.Manejador).Assembly);
 
 builder.Services.AddCors(options =>
 {

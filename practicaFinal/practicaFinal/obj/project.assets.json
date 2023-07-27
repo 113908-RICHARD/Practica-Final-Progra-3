@@ -2526,11 +2526,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\20400\\source\\repos\\practicaFinal\\practicaFinal\\practicaFinal.csproj",
+      "projectUniqueName": "C:\\Users\\20400\\Documents\\GitHub\\Practica-Final-Progra-3\\practicaFinal\\practicaFinal\\practicaFinal.csproj",
       "projectName": "practicaFinal",
-      "projectPath": "C:\\Users\\20400\\source\\repos\\practicaFinal\\practicaFinal\\practicaFinal.csproj",
+      "projectPath": "C:\\Users\\20400\\Documents\\GitHub\\Practica-Final-Progra-3\\practicaFinal\\practicaFinal\\practicaFinal.csproj",
       "packagesPath": "C:\\Users\\20400\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\20400\\source\\repos\\practicaFinal\\practicaFinal\\obj\\",
+      "outputPath": "C:\\Users\\20400\\Documents\\GitHub\\Practica-Final-Progra-3\\practicaFinal\\practicaFinal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\20400\\AppData\\Roaming\\NuGet\\NuGet.Config",

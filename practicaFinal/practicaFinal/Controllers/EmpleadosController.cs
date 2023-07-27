@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using practicaFinal.Buisness;
+using practicaFinal.Comandos;
 using practicaFinal.Data;
 using practicaFinal.Resultados;
 
@@ -25,6 +26,21 @@ namespace practicaFinal.Controllers
             return await _mediator.Send(new GetEmpleadosBuisness.GetEmpleados
             {
                 
+            });
+        }
+
+        [HttpPost]
+        [Route("api/empleados/PostNuevoEmpleado")]
+        public async Task<ResutladoPostPersona> PostNuevoEmpleado([FromBody] PostEmpleadoComando comando)
+        {
+            return await _mediator.Send(new PostEmpleadoBuisness.PostEmpleado
+            {
+                Name = comando.Name,
+                Apellido = comando.Apellido,
+                IdCargo = comando.IdCargo,
+                IdSucursal = comando.IdSucursal,
+                DNI = comando.DNI,
+                IdJefe = comando.IdJefe
             });
         }
     }

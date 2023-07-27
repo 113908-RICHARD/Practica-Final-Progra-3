@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jy27A3TDc/6ulO5VafvYtYP9ePTuUs/uMRPTMFIcTidTTE1jlk0N/1xlsiMZKakDBbW0/z/pegcXIWtkfXA9zQ==",
+  "dgSpecHash": "oAY2sC96mLhuijH55TgQblg14Z80J2Yt9xalJD2aSkpF53KUOytFIlstrdYY131GmtMHfFHyVmRSfFBkTDytVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\20400\\source\\repos\\practicaFinal\\practicaFinal\\practicaFinal.csproj",
+  "projectFilePath": "C:\\Users\\20400\\Documents\\GitHub\\Practica-Final-Progra-3\\practicaFinal\\practicaFinal\\practicaFinal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\20400\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\20400\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
