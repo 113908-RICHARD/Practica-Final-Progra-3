@@ -13,7 +13,7 @@ namespace practicaFinal.Controllers
         private readonly ContextDB _contexto;
         private readonly IMediator _mediator;
 
-        public EmpleadosController(ContextDB contexto,IMediator mediator)
+        public EmpleadosController(ContextDB contexto, IMediator mediator)
         {
             _contexto = contexto;
             _mediator = mediator;
@@ -25,7 +25,7 @@ namespace practicaFinal.Controllers
         {
             return await _mediator.Send(new GetEmpleadosBuisness.GetEmpleados
             {
-                
+
             });
         }
 
@@ -42,6 +42,36 @@ namespace practicaFinal.Controllers
                 DNI = comando.DNI,
                 IdJefe = comando.IdJefe
             });
+        }
+        [HttpGet]
+        [Route("api/cargos/obtenerCargos")]
+        public async Task<ListadoCargos> obtenerCargos()
+        {
+            return await _mediator.Send(new GetCargosBuisness.GetCargos
+            {
+
+            });
+
+        }
+        [HttpGet]
+        [Route("api/Sucursales/obtenerSucursales")]
+        public async Task<ListadoSucursales> obtenerSucursales()
+        {
+            return await _mediator.Send(new GetSucursalesBuisness.GetSucursales
+            {
+
+            });
+
+        }
+        [HttpGet]
+        [Route("api/Empleados/obtenerJefes")]
+        public async Task<ListadoEmpleados> obtenerJefes()
+        {
+            return await _mediator.Send(new getJefesBuisness.GetJefes
+            {
+
+            });
+
         }
     }
 }

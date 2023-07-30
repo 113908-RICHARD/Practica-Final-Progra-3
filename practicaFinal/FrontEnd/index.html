@@ -11,20 +11,54 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <form class="form container" id="formulario">
+
+    <div class="container-fluid bg-primary py-5">
+      <div class="container text-white">
+          <h1 class="display-3"> Bienvenido al sistema</h1>
+          <p class="lead">Cree un empleado</p>
+
+      </div>
+
+  </div>
+    <form class="form container my-4" id="formulario">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="nombre">nombre</label>
-            <input type="text" class="form-control" name="nombre">
+            <input id="nombre" type="text" class="form-control" name="nombre">
           </div>
           <div class="form-group col-md-6">
             <label for="apellido">apellido</label>
-            <input type="text" class="form-control" name="apellido">
+            <input id="apellido" type="text" class="form-control" name="apellido">
           </div>
           <div class="form-group col-md-6">
             <label for="dni">DNI</label>
-            <input type="text" class="form-control" name="dni">
+            <input id="dni" type="text" class="form-control" name="dni">
           </div>
+          <div class="form-group col-md-6 p-0">
+            <label for="inputCargo">Cargo a tomar</label>
+            <select id="inputCargo" name="inputCargo" class="form-control">
+              <option value="Eliga un cargo a tomar..." selected>Eliga un cargo a tomar...</option>
+                
+               
+                
+            </select>
+        </div>
+        <div class="form-group col-md-6 p-0">
+          <label for="inputSucursal">Sucursal a añadirse</label>
+          <select id="inputSucursal" name="inputSucursal" class="form-control">
+            <option value="Eliga una sucursal..." selected>Eliga una sucursal...</option>
+             
+              
+          </select>
+      </div>
+      <div class="form-group col-md-6 p-0">
+        <label for="inputJefe">Jefe de la persona</label>
+        <select id="inputJefe" name="inputJefe" class="form-control">
+          <option value="Eliga un jefe..." selected>Eliga un jefe..</option>
+           
+            
+        </select>
+    </div>
         </div>
        
         
@@ -34,7 +68,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-4 d-flex justify-content-md-end">
-              <button type="submit" class="btn btn-primary btn-block">Enivar mensaje</button>
+              <button onclick="cargarNuevoEmpleado()" type="button" class="btn btn-primary btn-block">Enivar mensaje</button>
             </div>
           </div>
         </div>
@@ -90,9 +124,10 @@
         })
       }
     });
-
-
-
+    $.validator.addMethod('selectNotDefault', function(value, element, param) {
+    return value !== param;
+  }, 'Seleccione una opcion valida');
+   
     $(document).ready(function () {
 
 
@@ -112,13 +147,27 @@
 
 
           },
-          email: {
-            email: true,
+          dni: {
+            minlength: 8,
             required: true
 
           },
-          mensaje: {
-            required: true
+          inputCargo: {
+            required: true,
+            selectNotDefault: 'Eliga un cargo a tomar...'
+           
+
+          },
+          inputSucursal: {
+            required: true,
+            selectNotDefault: 'Eliga una sucursal...'
+            
+
+          },
+          inputJefe: {
+            required: true,
+            selectNotDefault: 'Eliga un jefe...'
+            
 
           }
 
@@ -140,13 +189,23 @@
 
 
           },
-          mensaje: {
-            requiered: "Debe ingresar un mensaje"
+          dni: {
+            requiered: "Debe ingresar un DNI valido",
+            minlength:" El dni no puede ser menor de 8 caracteres"
+
 
           },
+          inputSucursal:{
+            required: "Seleccione una opcion valida"
+            
+
+          },
+          inputCargo:{
+            required: "Seleccione una opcion valida"
+          }
 
 
-          email: "Por favor introduzca un email correcto",
+         
 
         },
         errorElement: "small",
@@ -155,5 +214,21 @@
     });
 
   </script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+            cargarCargos();
+        });
+        window.addEventListener('DOMContentLoaded', () => {
+            cargarSucursales();
+        });
+        window.addEventListener('DOMContentLoaded', () => {
+            cargarJefes();
+        });
+        
+  </script>
+  <script src="scriptCargarCargos.js"></script>
+  <script src="scriptCargarSucursales.js"></script>
+  <script src="scriptCargarJefes.js"></script>
+  <script src="sciptCrearEmpleado.js"></script>
   </body>
 </html>
