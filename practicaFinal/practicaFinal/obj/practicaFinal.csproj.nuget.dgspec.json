@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\20400\\Documents\\GitHub\\Practica-Final-Progra-3\\practicaFinal\\practicaFinal\\practicaFinal.csproj": {}
+    "C:\\Users\\Genaro\\Documents\\GitHub\\Practica-Final-Progra-3\\practicaFinal\\practicaFinal\\practicaFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\20400\\Documents\\GitHub\\Practica-Final-Progra-3\\practicaFinal\\practicaFinal\\practicaFinal.csproj": {
+    "C:\\Users\\Genaro\\Documents\\GitHub\\Practica-Final-Progra-3\\practicaFinal\\practicaFinal\\practicaFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\20400\\Documents\\GitHub\\Practica-Final-Progra-3\\practicaFinal\\practicaFinal\\practicaFinal.csproj",
+        "projectUniqueName": "C:\\Users\\Genaro\\Documents\\GitHub\\Practica-Final-Progra-3\\practicaFinal\\practicaFinal\\practicaFinal.csproj",
         "projectName": "practicaFinal",
-        "projectPath": "C:\\Users\\20400\\Documents\\GitHub\\Practica-Final-Progra-3\\practicaFinal\\practicaFinal\\practicaFinal.csproj",
-        "packagesPath": "C:\\Users\\20400\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\20400\\Documents\\GitHub\\Practica-Final-Progra-3\\practicaFinal\\practicaFinal\\obj\\",
+        "projectPath": "C:\\Users\\Genaro\\Documents\\GitHub\\Practica-Final-Progra-3\\practicaFinal\\practicaFinal\\practicaFinal.csproj",
+        "packagesPath": "C:\\Users\\Genaro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Genaro\\Documents\\GitHub\\Practica-Final-Progra-3\\practicaFinal\\practicaFinal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\20400\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Genaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,8 +79,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -92,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -48,7 +48,7 @@ namespace practicaFinal.Buisness
                     return result;
                 }
 
-                Guid idToFind = new Guid("f6668f4a-2bfd-11ee-be56-0242ac120002");
+                Guid idToFind = new Guid("77bc0ec2-2f2c-11ee-be56-0242ac120002");
                 var Empleados = await _contexto.Empleados.Where(c => c.IdCargo == idToFind).ToListAsync();
 
 
